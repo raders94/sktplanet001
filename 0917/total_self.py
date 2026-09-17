@@ -2,8 +2,13 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from pathlib import Path
 
-PRO01_CSV_PATH = './pro01.csv'
+Target_dir='0917'
+Target_csv='pro01.csv'
+DIR = Path(__file__).resolve().parent
+
+PRO01_CSV_PATH = DIR.parent/ Target_dir / Target_csv
 
 df = pd.read_csv(PRO01_CSV_PATH, encoding='cp949') #utf-8 or cp949
 
