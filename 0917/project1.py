@@ -1,8 +1,7 @@
 from pathlib import Path
 import pandas as pd
 import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
+
 
 st.set_page_config(page_title='판매 대시보드', page_icon='😶‍🌫️',layout='wide')
 
